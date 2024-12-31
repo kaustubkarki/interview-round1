@@ -67,7 +67,7 @@ const products = [
   { id: 50, name: "Item 50", price: 12, weight: 20 },
 ];
 
-app.get("/products", (res) => {
+app.get("/products", (req, res) => {
   res.json(products);
 });
 
